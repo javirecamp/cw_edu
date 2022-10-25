@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두번째 HTML 파일만들기</title>
+    <style>
+        div{
+            background-color: #e7e727;
+            padding: 10px;
+        }
+        span{
+            background-color: #36FFFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- 주석처리 됩니다.  //한줄 주석 처리 
+         주석은 기능이나 화면 구현에 상관없이 처리할때
+         부연 설명을 넣을때 사용한다.
+    -->
+    1.주석처리가 안되면 이렇게 됩니다. 
+
+    <!-- 2.<start tag>content</end tag>
+           <h1>안녕하세요.</h1>
+           element(엘리먼트)= start tag + content+ end tag
+    -->
+
+    <!-- 3.index.html 파일은 그냥 더블클릭해도 열린다.
+           live server를 사용하는 이유는 실시간 반영
+           되고, 어떤 태그의 경우에는 서버가 아니면 반영
+           이 되지 않는 경우가 발생하기 때문이다.
+     -->
+    
+    <!-- 4. h1 ~ h5 -->
+    <h1>밥먹어서 졸려요 ㅠㅠ</h1>
+    <h2>밥먹어서 졸려요 ㅠㅠ</h2>
+    <h3>밥먹어서 졸려요 ㅠㅠ</h3>
+    <h4>밥먹어서 졸려요 ㅠㅠ</h4>
+    <h5>밥먹어서 졸려요 ㅠㅠ</h5>
+
+    <!-- 5. br 한 줄 바꿈 효과를 나타내는 태그 -->
+    오늘은 좋은 날인가 봐요.
+    내일은 더 좋은 날이 될거에요 호호.<br>
+    오늘은 좋은 날인가 봐요.<br>
+    내일은 더 좋은 날이 될거에요 호호.
+
+    <!-- 6. p 태그를 사용하는 방법
+              문단별로 묶을 때 사용하는 태그 -->
+    <p>안녕~ 오늘은 HTML/CSS 수업시간이야 호호호</p>
+    <p>
+        안녕~ 오늘은 HTML/CSS 수업시간이야 호호호
+    </p>
+
+    <!-- 7. div 태그
+            가장 많이 사용하는 태그 
+            가로 * 세로 형태의 박스로 태그가 만들어진다.
+     -->
+     <div>div 태그가 이렇게 사용하는 겁니다.</div>
+
+     <!-- 8. span 와 div 태그의 차이를 확인해 보자.
+        div는 박스형태로 배경이 적용이 되고 
+        span는 컨텐트 자체의 배경으로 적용이 된다.
+
+        9. span 태그는 어떤 한 부분을 변경하거나 적용하고 싶을
+           때 사용하는 태그
+     -->
+     <br>
+     <div>
+     책 속으로
+     지식이 없다는 것은 두뇌의 장기 기억 공간(long-term memory, LTM)에 해당 내용이 없다는 것을 뜻한다. 장기 기억 공간은 기억하는 내용을 반영구적으로 저장하는 곳이다. 반면에 지식이 아닌 어떤 정보가 부족할 때는 단기 기억 공간(short-term memory, STM)에 해당 내용이 없기 때문이다. 정보를 수집할 때 단기 기억 장소에 일시적으로 저장하지만, 다른 정보를 찾는 과정에서 이미 수집해놓은 정보 중 일부는 잊어버린다. 마지막으로, 많은 정보를 처리할 때는 작업 기억 공간(working memory)에 영향을 미치는데 우리는 사고할 때 이 영역을 사용한다.
+     --- p.7
+     </div>
+     <br>
+     <span>
+     책 속으로
+     지식이 없다는 것은 두뇌의 장기 기억 공간(long-term memory, LTM)에 해당 내용이 없다는 것을 뜻한다. 장기 기억 공간은 기억하는 내용을 반영구적으로 저장하는 곳이다. 반면에 지식이 아닌 어떤 정보가 부족할 때는 단기 기억 공간(short-term memory, STM)에 해당 내용이 없기 때문이다. 정보를 수집할 때 단기 기억 장소에 일시적으로 저장하지만, 다른 정보를 찾는 과정에서 이미 수집해놓은 정보 중 일부는 잊어버린다. 마지막으로, 많은 정보를 처리할 때는 작업 기억 공간(working memory)에 영향을 미치는데 우리는 사고할 때 이 영역을 사용한다.
+     --- p.7
+     </span>
+
+
+     <!-- 10. !DOCTYPE html 
+              html4에서 html5로 전환되면서 html5 문서인지를 
+              확인할 때 체크해보는 것
+    -->
+
+    <!-- 11. script tag
+             HTML5 이전에는 javascript라는 것을 명시해 줘야
+             했지만 HTML5 이후에는 script라고만 작성해도 
+             javascript로 인식을 한다.
+     -->
+     <!-- <script>
+        alert("안녕~ 나 알림창이야~");
+     </script> -->
+
+     <!-- 11.id 속성 값
+          id="아이값"
+          현재 문서에서 이 아이디 값을 가지는 것은 
+          이 엘리멘트가(태그)유일 하다.
+
+          12.속성은 태그안에 어떤 특징을 처리하기 위해
+          property="value" 형태로 사용하는 것
+          id="bts"
+     -->
+     <h1 id="bts">BTS 공연 완전체 마지막</h1>
+
+     <!--13. ol : ordered list 순서있게 목록 처리 
+          ul : unordered list 순서 관계 없음
+          dl : definition list 사전 정의하는 것처럼 정리
+     -->
+     <ol type="i">
+        <li>아이유</li>
+        <li>BTS</li>
+        <li>blackpink</li>
+    </ol>
+    <ol>
+       <li>아이유</li>
+       <li>BTS</li>
+       <li>blackpink</li>
+    </ol>
+    <ul type="square">
+       <li>아이유</li>
+       <li>BTS</li>
+       <li>blackpink</li>
+    </ul>
+    <dl>
+       <li>아이유</li>
+       <li>BTS</li>
+       <li>blackpink</li>
+    </dl>
+    <br>
+<!-- 14. form 태그 
+ -->
+
+ <form action="" method="get">
+    <label for="phone">phone:</label>
+    <input type="text" id="phone" name="phone" autofocus required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br> 
+    
+    <label for="postNo">postNo:</label>
+    <input type="text" id="postNo" name="postNo" 
+    placeholder="00700"><br> 
+
+    <input type="date"><br>
+    <input type="datetime-local"><br>
+    <input type="month"><br>
+    <input type="week"><br>
+    <input type="color"><br>
+    <button type="submit">전송하기</button>
+ </form>
+
+     
+     
+</body>
+</html>
