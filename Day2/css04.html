@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css04</title>
+    <style>
+        /* * 선택자는 HTML 태그의 모든 태그에 반영되게 하는 방법
+        CSS 스타일을 적용할 때는 동일한 조건에서는 
+        나중에 적용한 스타일 마지막에 반영된다. 
+         */
+        *{
+            color: green;
+        }
+        li{
+            color: red;
+        }
+        #bts{
+            font-size: 30px;
+            color: blue;
+        }
+        .red{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        a:hover{
+            color: red;
+            background-color: cyan;
+        }
+        a[href="https://www.daum.net"]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>오늘은 시간이 빨리가네요.</p>
+    <h1>점심시간이 얼마 남지 않았어요~</h1>
+    <ol>
+        <li>라면</li>
+        <li>떢복이</li>
+    </ol><br>
+    <div id="bts">BTS</div><br>
+    <div class="red"></div>
+    <a href="https://www.naver.com">www.naver.com</a><br>
+    <a href="https://www.daum.net">다음</a><br>
+
+</body>
+</html>

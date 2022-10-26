@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css05</title>
+    <style>
+        /* ^ 이걸로 시작하는 녀석 */
+        a[href^="https://www.googl"]{
+            color: red;
+        }
+        /* $를 사용해서 이걸로 끝나는 녀석을 선택 */
+        a[href$="googledaum.net"]{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">다음</a><br>
+    <a href="https://www.daumgoogledaum.net">구글</a><br>
+    <a href="https://twww.google.com">구글</a><br>
+</body>
+</html>
