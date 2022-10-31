@@ -1,13 +1,13 @@
 
 /* float 태그를 사용하기 위해서 초기화 하는 작업 */
-section .portfolio-me::after{
+section .artifact-me::after{
     content:"";
     display:block;
     clear: both;
 }
 
 /* 아이템의 스타일링을 해준다. */
-section .portfolio-me .portfolio-inner{
+section .artifact-me .artifact-inner{
     width: 30%;
     margin-right: 5%;
     background-color: #fff;
@@ -21,20 +21,20 @@ section .portfolio-me .portfolio-inner{
    이유는 margin 때문이라서 3번째오는 아이템에서 margin을 삭제하는 작업을 해준다. 
 
 */
-section .portfolio-me .portfolio-inner:nth-child(3n){
+section .artifact-me .artifact-inner:nth-child(3n){
     margin-right: 0;
 }
 
 /* 이미지가 다 차도록 작업을 해준다. 
    그리고 이미지가 블록 성격이 아닌데, 블록으로 지정해 준다.
  */
-section .portfolio-me .portfolio-inner img{
+section .artifact-me .artifact-inner img{
     width: 100%;
     display: block;
 }
 
 
-section .portfolio-me .portfolio-inner strong{
+section .artifact-me .artifact-inner strong{
     color: #fa6a6a;
     margin: 0.5rem 0;
     /* strong 태그가 블록형태가 아니라 block으로 바꿔준다.
@@ -44,7 +44,7 @@ section .portfolio-me .portfolio-inner strong{
 }
 
 /* h3 태그 코카콜라등 의 태그의 내용을 수정해 준다. */
-section .portfolio-me .portfolio-inner h3{
+section .artifact-me .artifact-inner h3{
     font-size: 1.75rem;
 }
 

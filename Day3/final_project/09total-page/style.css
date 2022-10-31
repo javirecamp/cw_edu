@@ -162,49 +162,49 @@ section .title p{
 }
 /* title section 공통 end */
 
-/* about me css */
-section .about-self::after{
+/* intro me css */
+section .intro-self::after{
     content: '';
     clear: both;
     display: block;
 }
 
-section .about-self .left{
+section .intro-self .left{
     float: left;
     width: 50%;
 }
 
-section .about-self .left img{
+section .intro-self .left img{
     width: 100%;
 }
 
-section .about-self .right{
+section .intro-self .right{
     width: 50%;
     float: left;
     padding: 0 2rem ;
 }
 
-section .about-self .right h3{
+section .intro-self .right h3{
     font-size: 2.25rem;
     margin-bottom: 1rem;
 }
 
-section .about-self .right h3 strong{
+section .intro-self .right h3 strong{
     color: #ed4848;
 }
 
-section .about-self .right p{
+section .intro-self .right p{
     font-size: 1.15rem;
     margin: 1rem 0;
 }
 
-section .about-self .right .social a{
+section .intro-self .right .social a{
     font-size: 2.5rem;
     margin-right: 0.2rem;
 }
-/* about me end */
+/* intro me end */
 
-/* what i do */
+/* class */
 /* section{
     background-color: #f8f8f8;
 } */
@@ -250,7 +250,7 @@ section .do-me .do-inner:hover{
 section .do-me .do-inner:hover .icon i{
     color: white;
 }
-/* what i do end */
+/* class end */
 
 /* background */
 .bg{
@@ -261,8 +261,8 @@ section .do-me .do-inner:hover .icon i{
 }
 /* background end */
 
-/* portfolio */
-section .portfolio-me .portfolio-inner{
+/* artifact */
+section .artifact-me .artifact-inner{
     width: 30%;
     margin-right: 5%;
     background-color: #fff;
@@ -272,27 +272,27 @@ section .portfolio-me .portfolio-inner{
     margin-bottom: 3rem;
 }
 
-section .portfolio-me .portfolio-inner:nth-child(3n){
+section .artifact-me .artifact-inner:nth-child(3n){
     margin-right: 0;
 }
 
-section .portfolio-me .portfolio-inner img{
+section .artifact-me .artifact-inner img{
     width: 100%;
     display: block;
 }
 
-section .portfolio-me .portfolio-inner strong{
+section .artifact-me .artifact-inner strong{
     color: #fa6a6a;
     margin: 0.5rem 0;
     display: block;
 }
 
-section .portfolio-me .portfolio-inner h3{
+section .artifact-me .artifact-inner h3{
     font-size: 1.75rem;
 }
-/* portfolio end */
+/* artifact end */
 
-/* Contact With Me */
+/* Contact */
 section .contact-me::after{
     content: "";
     display: block;
@@ -354,4 +354,4 @@ section .contact-me .right button{
     border: none;
     color: white;
 }
-/* Contact With Me end */
+/* Contact end */

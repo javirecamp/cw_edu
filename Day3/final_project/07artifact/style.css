@@ -50,7 +50,7 @@ section:nth-child(2n){
    background-color: #f8f8f8;
 }
 
-section .about-self::after{
+section .intro-self::after{
    content: '';
    clear: both;
    display: block;
