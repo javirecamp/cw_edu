@@ -1,0 +1,92 @@
+
+/* 1 float 사용시 초기화 하기 */
+section .contact-me::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 2 왼쪽 영역을 30%정도 차지하게 해준다. */
+section .contact-me .left{
+    width: 30%;
+    float: left;
+}
+
+/* 4 왼쪽 영역에 카드를 꾸며준다. 
+     
+*/
+section .contact-me .left .card{
+    border: 1px solid #ccc;
+    padding: irem;
+    /* 나란히 정렬이 되어야 해서 flex를 적용한다. */
+    display: flex;
+    /* 수직으로도 center를 적용한다. */
+    align-items: center;
+    /* 카드 영역과 카드 영역끼리 떨어지게 하기 위해서 bottom을 준다. */
+    margin-bottom: 1.25rem;
+}
+
+/* 5 폰트 어썸 아이콘이 적용된 부분이 떨어질 수 있게 해준다.  */
+section .contact-me .left .card .icon{
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+/* 3 오른쪽을 65% 차지하게 해준다. */
+section .contact-me .right{
+    width: 65%;
+    float: left;
+    margin-left: 5%;
+    border:1px solid #ccc;
+    padding: 1rem;
+}
+
+/* 폼 요소끼리 아랫쪽과 떨어지도록 해준다.  */
+section .contact-me .right .form-group{
+    margin-bottom: 1.25rem;
+}
+
+/* 아래와 간격을 벌려주기 위한 작업을 한다. */
+section .contact-me .right .form-group label{
+    display: block;
+    margin-bottom: 0.85rem;
+}
+
+section .contact-me .right .form-group input{
+    width: 100%;
+    padding: 0.625rem;
+    /* 클 */
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+section .contact-me .right .form-group input:focus,
+section .contact-me .right .form-group textarea:focus{
+    border:1px solid #719ece;
+    box-shadow: 0 0 10px #719ece;
+}
+
+section .contact-me .right .form-group textarea{
+    width: 100%;
+    height: 300px;
+    outline: none;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+section .contact-me .right button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #f78b00;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+
+

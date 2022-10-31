@@ -1,0 +1,82 @@
+/* section 영역에 font하고 padding을 적용 */
+section{
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem 0 ;
+}
+
+/* 흰색 회색이 반복되도록 할거다.
+   짝수면 회색
+*/
+section:nth-child(2n){
+    background-color: #f8f8f8;
+}
+
+/* float을 적용할 경우에 높이 값을 
+찾지 못하는 경우를 없애기 위해서 
+content ''로 정의한다.
+ */
+section .intro-self::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* title에 여백을 줘서 title을 떨어뜨려준다. */
+section .title h4{
+    font-size: 1.35rem;
+    color: #ed4848;
+    position: relative;
+}
+
+/* title의 h2의 폰트의 크기를 키워준다. */
+section .title h2{
+    font-size: 3.5rem;
+}
+
+/* title의 p에 있는 텍스트 사이즈 지정 */
+section .title p{
+    font-size: 1.15rem;
+}
+
+/* left 클래스를 왼쪽으로 가게하고, 넓이는 50%지정 */
+section .intro-self .left{
+    float: left;
+    width: 50%;
+}
+
+/* 이미지 넓이를 100%로 지정을 해준다. */
+section .intro-self .left img{
+    width: 100%;
+}
+
+/* .right도 균등하게 나눠질 수 있도록 넓이를 
+50% 배치는 left로 해준다. */
+section .intro-self .right{
+    width: 50%;
+    float: left;
+    /* padding값을 줘서 그림과 오른쪽 텍스트가 떨어지게 한다. */
+    padding: 0 2rem;
+}
+
+/* 그림 오른쪽 위에있는 텍스트 크게 만들기 */
+section .intro-self .right h3{
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+/* 그림 오른쪽에 있는 글씨 일부를 다른색으로 변경 */
+section .intro-self .right h3 strong{
+    color: #ed4848;
+}
+
+/* 그림 오른쪽에 있는 내용이 작성되어 있는 문단 스타일 적용 */
+section .intro-self .right p{
+    font-size: 1.15rem;
+    margin: 1rem 0;
+}
+
+/* 아이콘 스타일 적용 */
+section .intro-self .right .social{
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+}

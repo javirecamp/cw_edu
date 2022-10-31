@@ -1,0 +1,53 @@
+/* header 태그의 기본을 지정해 준다.
+*/
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* 옆으로 정렬을 해본다. 
+   display를 flex로 적용하고 
+   현재 축(수평)에서 양쪽 끝으로 갈라지도록 
+   놓기위해 space-between도 적용해 준다.
+*/
+header .container{
+    display: flex;
+    justify-content: space-between;
+    /* 수직에서도 수평을 맞춰준다. */
+    align-items: center;
+    /* 100%가 되어있지 않으면 안먹히는 경우도 있어서 
+       width 100%로 지정해 준다.
+     */
+    width: 100%;
+}
+
+/* 버튼 요소를 초기화 해 준다. */
+header button{
+    background-color: transparent;
+    border: 0;
+    /* 커서를 손가락 모양으로 적용해 준다. */
+    cursor: pointer;
+}
+
+/* 맨 왼쪽의 글자에 스타일을 지정해 준다. */
+header h1 button{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* 오른쪽에 있는 메뉴들을 한줄로 배치시킨다. */
+header nav ul{
+    display: flex;
+}
+
+/* 오른쪽에 있는 메뉴들을 정렬하기 위해서 padding을 준다. */
+header nav ul li{
+    padding: 10px;
+}
+
+/* 폰트 사이즈를 적당히 적용한다. */
+header nav ul li button{
+    font-size: 1.2rem;
+}

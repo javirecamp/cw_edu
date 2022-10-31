@@ -1,0 +1,30 @@
+/* 사용할 구글 폰트를 복사해서 삽입해준다. 
+Poppins Regular 400,700
+Varela Round 400
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+
+/* 전체 스타일을 초기화 해준다. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* a태그 같은 경우에는 텍스트 데코레이션이 
+   기본적으로 지정이 되어 있기 때문에 
+   텍스트 데코레이션을 none으로 지정하고, 
+   색상의 경우에는 부모의 색상을 상속받도록 
+   inhert을 지정한다.
+*/
+a,a:link,a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* li 태그에는 기본적으로 스타일이 적용되어 
+   있기때문에 없애기 위해서 none으로 지정
+ */
+ li{
+    list-style: none;
+ }
