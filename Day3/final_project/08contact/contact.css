@@ -55,7 +55,6 @@ section .contact-me .right .form-group label{
 section .contact-me .right .form-group input{
     width: 100%;
     padding: 0.625rem;
-    /* 클 */
     outline: none;
     border: 1px solid #ccc;
     border-radius: 10px;
